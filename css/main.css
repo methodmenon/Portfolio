@@ -1,0 +1,513 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+/* Grid, Row, and Column Code */
+
+#app_contain {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 320px;
+  /*most developers design for 320++ */
+}
+
+.grid {
+    width: 100%;
+    max-width: 960px;
+    background-color: black;
+    text-align: center;
+    /*background-image: url("C:/Thinkful/FEWD15/Responsive Portfolio/images/abstract10.jpg");
+    background-size: 200% 100%;*/
+}
+
+.grid, .row, [class*="-col"] {
+	padding: 0;
+	margin: 0;
+}
+
+.grid:after, .row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.row {
+	margin-bottom: 1em;
+	/*background-color: #BBB;*/
+  /*background-image: url("C:/Thinkful/FEWD15/Responsive Portfolio/images/abstract10.jpg");
+  background-size: 100% 100%;*/
+}
+
+#projects_row {
+  background-color: black;
+}
+
+.row:last-child {
+	margin-bottom: 0;
+}
+
+[class*="-col"] {
+	float: left;
+	margin-right: 1.5%;
+	background-color: #EEE;
+}
+
+[class*="-col"]:last-child {
+	margin-right: 0;
+}
+
+
+/*Calculated Column Code*/
+.one-col {
+  width: 6.958%;
+}
+
+.two-col {
+  width: 15.41%;
+}
+
+.three-col {
+  width: 23.87%;
+}
+
+.four-col {
+  width: 32.33%;
+}
+
+.five-col {
+  width: 40.79%;
+}
+
+.six-col {
+  width: 49.25%;
+}
+
+.seven-col {
+  width: 57.70%;
+}
+
+.eight-col {
+  width: 66.16%;
+}
+
+.nine-col {
+  width: 74.62%;
+}
+
+.ten-col {
+  width: 83.08%;
+}
+
+.eleven-col {
+  width: 91.54%;
+}
+
+.twelve-col {
+  width: 100%;
+}
+
+/*Calculated Offset Code*/
+.one-offset {
+  margin-left: 8.458%;
+}
+
+.two-offset {
+  margin-left: 16.91%;
+}
+
+.three-offset {
+  margin-left: 25.37%;
+}
+
+.four-offset {
+  margin-left: 33.83%;
+}
+
+.five-offset {
+  margin-left: 42.29%;
+}
+
+.six-offset {
+  margin-left: 50.75%;
+}
+
+.seven-offset {
+  margin-left: 59.20%;
+}
+
+.eight-offset {
+  margin-left: 67.66%;
+}
+
+.nine-offset {
+  margin-left: 76.12%;
+}
+
+.ten-offset {
+  margin-left: 84.58%;
+}
+
+.eleven-offset {
+  margin-left: 91.54%;
+}
+
+/*Grid Adaptability with Media Query*/
+@media all and (max-width: 768px) {
+  [class*="-col"] {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  .nav_row {
+  background-color: white !important;
+  }
+
+  /*for last column on last row*/
+  .row:last-child > [class*="-col"]:last-child {
+    margin-bottom: 0;
+  }
+
+  [class*="-offset"] {
+    margin-left: 0;
+  }
+
+  .project_image {
+    border-bottom: 5px solid white;
+    /*margin: 0px !important;*/
+    margin-left: .75% !important;
+    margin-right: .75% !important;
+  }
+
+  .row {
+    margin: 0;
+  }
+}
+/*Font styling*/
+html {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*Code for Icons of Twitter, Facebook, and Google+ */
+/* Wrapper */
+
+#contact_icons {
+  /*text-align: center;*/
+  text-align: center;
+  background-color: black;
+}
+
+.icon-button {
+  /*background-color: white;*/
+  margin-right: 10
+  border-radius: 3.6rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2.0rem;
+  height: 3.6rem;
+  line-height: 3.6rem;
+  margin: 0 8%;
+  position: relative;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 3.6rem;
+}
+
+/* Circle */
+
+.icon-button span {
+  text-align: center;
+  border-radius: 0;
+  /*display: block;*/
+  height: 0;
+  /*right: %;*/
+  /*left: 0;*/
+  margin: 0;
+  /*margin-left: 10%;*/
+  position: absolute;
+  /*top: 50%;*/
+  -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+       -o-transition: all 0.3s;
+          transition: all 0.3s;
+  width: 0;
+}
+/*.icon-button:hover span {
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 3.6rem;
+  margin-left: -1.8rem;
+}*/
+.envelope span {
+  background-color: #4099ff;
+}
+.facebook span {
+  background-color: #3B5998;
+}
+.google-plus span {
+  background-color: #db5a3c;
+  color: #db5a3c;
+}
+
+/* Icons */
+.icon-button i {
+  background: none;
+  /*color: white;*/
+  height: 3.6rem;
+  left: 0;
+  line-height: 3.6rem;
+  /*position: absolute;*/
+  top: 0;
+  -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+       -o-transition: all 0.3s;
+          transition: all 0.3s;
+  width: 3.6rem;
+  z-index: 10;
+}
+.icon-button .fa-envelope {
+  color: white;
+}
+.icon-button .fa-facebook {
+  color: #3B5998;
+}
+.icon-button .fa-google-plus {
+  color: #db5a3c;
+}
+.icon-button:hover .fa-envelope,
+.icon-button:hover .fa-facebook,
+.icon-button:hover .fa-google-plus {
+  color: white;
+  font-size: 40px;
+}
+
+/*Nav bar */
+.nav_row {
+  background-color: black;
+  border-bottom: 5px solid white;
+}
+
+.nav_div {
+  height: 100%;
+  background-color: black;
+}
+
+.nav {
+  text-decoration: none;
+  color: white;
+  vertical-align: middle;
+}
+
+a:hover {
+  color: white;
+}
+
+.nav:hover {
+  font-size: 22px;
+}
+
+/*Navigation code */
+#nav_envelope {
+  padding-right: 30px;
+}
+
+.nav {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*image code*/
+.image-div {
+  /*height: 50px;*/
+}
+.site-effect {
+  background-size: 100% 100%;
+  height: 100px;
+}
+
+.image_text {
+  color: white;
+  font-weight: 100;
+  font-size: 20px;
+  /*padding-top: 3%;*/
+}
+
+/*Initialize hidden and non hidden code*/
+.coming_soon {
+  display: none;
+}
+
+.close {
+  background: black;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+/*Statement Code*/
+#statement_div {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-weight: 100;
+  /*border-top: 5px solid white;*/
+  /*border-bottom: 5px solid white;*/
+  background-image: url("images/globe2.jpg");
+  /*background-size: 100% 100%;*/
+  background-size: cover;
+  background-position: center center;
+}
+
+#work_link {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-weight: 100;
+  /*border-top: 5px solid white;*/
+  /*border-bottom: 5px solid white;*/
+  background-image: url("images/globe2.jpg");
+  /*background-size: 100% 100%;*/
+  background-size: cover;
+  background-position: center center;
+}
+
+#image_2 {
+  background-image: url("images/blue4.jpg");
+  background-size: cover;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+}
+
+#image_3 {
+  background-image: url("images/blue4.jpg");
+  background-size: cover;
+  border-top: 5px solid white;
+}
+
+/*Projects Display*/
+.project_image {
+  height: 200px;
+  /*without grid*/
+  margin-right: .75%;
+  margin-left: .75%;
+}
+
+.project_image:first-child {
+  /*without grid*/
+  margin-left: .95%;
+}
+
+.image_text_overlay {
+  opacity: 0;
+  height: 200px;
+}
+
+.text_title {
+  font-weight: bold;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+#api_project {
+  border-left: 2px solid black;
+  background-image: url("project_images/api_project_1.png");
+  background-size: 100% 100%;
+}
+
+#api_project:hover .image_text_overlay {
+  opacity: .8;
+  background-color: black;
+  color: white;
+
+}
+
+#hot_or_cold {
+  background-image: url("project_images/hot_or_cold_2.png");
+  background-size: 100% 100%;
+}
+
+#hot_or_cold:hover .image_text_overlay {
+  opacity: .8;
+  background-color: black;
+  color: white;
+}
+
+#quiz_app {
+  background-image: url("project_images/science_quiz_1.png");
+  background-size: 100% 100%;
+  border-right: 2px solid black;
+}
+
+#quiz_app:hover .image_text_overlay {
+  opacity: .8;
+  background-color: black;
+  color: white;
+}
+
+/*duplicate image code for slick development*/
+#fizzbuzz_refactor {
+  border-left: 2px solid black;
+  background-image: url("project_images/FizzBuzz_Refactor_1.png");
+  background-size: 100% 100%;
+}
+
+#fizzbuzz_refactor:hover .image_text_overlay {
+  opacity: .8;
+  background-color: black;
+  color: white;
+
+}
+
+#jquery_sf {
+  background-image: url("project_images/sf_scaled.png");
+  background-size: 100% 100%;
+}
+
+#jquery_sf:hover .image_text_overlay {
+  opacity: .8;
+  background-color: black;
+  color: white;
+}
+
+#stacker_ajax {
+  background-image: url("project_images/stacker_ajax_scaled.png");
+  background-size: 100% 100%;
+  border-right: 2px solid black;
+}
+
+#stacker_ajax:hover .image_text_overlay {
+  opacity: .8;
+  background-color: black;
+  color: white;
+}
+
+#shopping_list {
+  background-image: url("project_images/Shopping_List_scaled.png");
+  background-size: 100% 100%;
+  border-right: 2px solid black;
+}
+
+#shopping_list:hover .image_text_overlay {
+  opacity: .8;
+  background-color: black;
+  color: white;
+}
+
+#google_clone {
+  background-image: url("project_images/google_clone.png");
+  background-size: 100% 100%;
+  border-right: 2px solid black;
+}
+
+#google_clone:hover .image_text_overlay {
+  opacity: .8;
+  background-color: black;
+  color: white;
+}
+
+
+/*Slick plugin code*/
+
+

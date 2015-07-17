@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Responsive Portfolio</title>
+
+	<!--Stylesheets-->
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,400,900|Ubuntu+Condensed|Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/main.css">
+
+	<link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css'>
+
+	<!--where fa = font awesome-->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+	<!--Slick Plugin SS, slick-theme.css for default styling-->
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+	<!--Javascript-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<script src="js/jquery-2.1.4.min.js"></script>
+
+	<script type="text/javascript" src="js/app.js"></script>
+
+	<!--Slick plugin js, requires jQuery 1.7+-->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+</head>
+<body>
+	<section class="grid" id="app_contain">
+		<div class="row nav_row">
+			<div class="three-col nav_div">
+				<p><a class="nav" id="nav_about" href="http://methodmenon.github.io/Online_Resume/resume.html" target="_blank">About Me</a></p>
+			</div>
+			<div class="three-col nav_div">
+				<p><a class="nav" id="nav_work" href="#">My Work</a></p>
+			</div>
+			<div class="five-col one-offset" id="contact_icons">
+					<a href="http://facebook.com/methodmenon" target="_blank" class="icon-button facebook"><i class="fa fa-facebook" id="nav_facebook"></i><span></span></a>
+					<a href="https://plus.google.com/u/0/+VivekMenon1/" target="_blank" class="icon-button google-plus"><i class="fa fa-google-plus" id="nav_google"></i><span></span></a>
+					<a href="mailto:methodmenon@gmail.com" target="_blank" class="icon-button envelope"><i class="fa fa-envelope" id="nav_envelope"></i><span></span></a>
+			</div>
+		</div>
+		<div class="row on_start">
+			<div class="twelve-col" id="statement_div">
+				<p>Helping to Bring Thoughts and Ideas to Life</p>
+				<p>Specializing in both Front End and Back End Applications</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="twelve-col coming_soon" id="work_link">
+				<p>Thank for your interest in looking at mor of my work!</p>
+				<p>This site is under development and will be up and running soon</p>
+				<p>In the mean time, feel free to contact me and I will be glad to send you any information or answer any questions you may have!</p>
+				<span class="close nav" style="cursor:pointer;">Back to my Portfolio</span>
+			</div>
+		</div>
+		<div class="on_start">
+			<div class="row image-div">
+				<div class="twelve-col site-effect" id="image_2">
+					<p class="image_text">Creativity</p>
+				</div>
+			</div>
+		   	<div class="row my_projects" id="projects_row">
+			   	<div class="carousel">
+			   		<div class="project_image" id="api_project" style="cursor:pointer;" onClick="window.open('http://methodmenon.github.io/Music_Service_Comparison/', '_blank');">
+			   			<div class="image_text_overlay">
+			   				<span class="text_title">Music Stream Analysis<br><br></span>
+			   				Compare different music streaming services based on the criteria ofyour choice.
+			   			</div>
+			   		</div>
+			   		<div class="project_image" id="hot_or_cold" style="cursor:pointer;" onClick="window.open('http://methodmenon.github.io/fewd_Hot_or_Cold/', '_blank');">
+			   			<div class="image_text_overlay">
+			   				<span class="text_title">Hot Or Cold<br><br></span>
+			   				Fun game showcasing the Binary Search Algorithm in use for guessing a randomly generated number. Better the guess, the hotter you get!
+			   			</div>
+			   		</div>
+			   		<div class="project_image" id="quiz_app" style="cursor:pointer;" onClick="window.open('http://methodmenon.github.io/Scientist_Quiz/main.html', '_blank');">
+			   			<div class="image_text_overlay">
+			   				<span class="text_title">Great Minds of Science<br><br></span>
+			   				How much do you actually know about your favorite scientists? Take this quiz to find out!
+			   			</div>
+			   		</div>
+			   		<div class="project_image" id="fizzbuzz_refactor" style="cursor:pointer;" onClick="window.open('http://methodmenon.github.io/FizzBuzz_Refactor/', '_blank');">
+			   			<div class="image_text_overlay">
+			   				<span class="text_title">Fizz Buzz Algorithm Application<br><br></span>
+			   				Enter a number from 1 - 100. Fizz Buzz algorithm will list out all the numbers up to your chosen number with a twist! Any number divisible by 3 will be replaced with 'fizz'. Any number divisible by 5 will be replaced with 'buzz'. Any number divisible by both 5 AND 3 will be replaced with 'fizzbuzz'. 
+			   			</div>
+			   		</div>
+			   		<div class="project_image" id="jquery_sf" style="cursor:pointer;" onClick="window.open(''http://methodmenon.github.io/jquery_StreetFighter/', '_blank');">
+			   			<div class="image_text_overlay">
+			   				<span class="text_title">Control Ryu with Jquery<br><br></span>
+			   				This app demonstrates the ability of controlling Ryu from the classic video game 'Street Fighter', solely with CSS and jQuery.
+			   			</div>
+			   		</div>
+			   		<div class="project_image" id="stacker_ajax" style="cursor:pointer;" onClick="window.open('http://methodmenon.github.io/stacker_AJAX/', '_blank');">
+			   			<div class="image_text_overlay">
+			   				<span class="text_title">Stackoverflow API<br><br></span>
+			   				Application that interacts with Stackoverflow allows a user to submit a topic they’re interested in and will display results of these user queries. Application functionality facilitated through the usage of AJAX requests.
+			   			</div>
+			   		</div>
+			   		<div class="project_image" id="shopping_list" style="cursor:pointer;" onClick="window.open('http://methodmenon.github.io/Shopping_List_App/', '_blank');">
+			   			<div class="image_text_overlay">
+			   				<span class="text_title">Shopping List<br><br></span>
+			   				A simple shopping list application that allows you to easily enter, delete, and mark completed items for your regular grocery store runs.
+			   			</div>
+			   		</div>
+			   		<div class="project_image" id="google_clone" style="cursor:pointer;" onClick="window.open('http://methodmenon.github.io/Google_Clone/', '_blank');">
+			   			<div class="image_text_overlay">
+			   				<span class="text_title">Google Clone<br><br></span>
+			   				Self designed clone of the official Google home page!
+			   			</div>
+					</div>		   			
+			   	</div>
+		   	</div>
+		   	<div class="row">
+				<div class="twelve-col site-effect" id="image_3">
+					<p class="image_text">Structure</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
