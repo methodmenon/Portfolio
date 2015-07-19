@@ -21,19 +21,19 @@
 }
 
 .grid, .row, [class*="-col"] {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .grid:after, .row:after {
-	content: "";
-	display: table;
-	clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .row {
-	margin-bottom: 1em;
-	/*background-color: #BBB;*/
+  margin-bottom: 1em;
+  /*background-color: #BBB;*/
   /*background-image: url("C:/Thinkful/FEWD15/Responsive Portfolio/images/abstract10.jpg");
   background-size: 100% 100%;*/
 }
@@ -43,17 +43,17 @@
 }
 
 .row:last-child {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 [class*="-col"] {
-	float: left;
-	margin-right: 1.5%;
-	background-color: #EEE;
+  float: left;
+  margin-right: 1.5%;
+  background-color: #EEE;
 }
 
 [class*="-col"]:last-child {
-	margin-right: 0;
+  margin-right: 0;
 }
 
 
@@ -339,13 +339,6 @@ a:hover {
   display: none;
 }
 
-.close {
-  background: black;
-  padding: 5px;
-  border-radius: 5px;
-  margin-bottom: 5px;
-}
-
 /*Statement Code*/
 #statement_div {
   background-color: black;
@@ -389,25 +382,41 @@ a:hover {
 /*Projects Display*/
 .project_image {
   height: 200px;
-  /*without grid*/
-  margin-right: .75%;
-  margin-left: .75%;
+  display: block;
+  cursor: pointer;
+  position: relative;
+  margin-right: .25%;
 }
 
-.project_image:first-child {
-  /*without grid*/
-  margin-left: .95%;
+.project_link {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
 }
 
 .image_text_overlay {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
   opacity: 0;
   height: 200px;
+  overflow: auto;
 }
 
-.text_title {
+.project_title {
   font-weight: bold;
   font-size: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.carousel {
+  display: block;
+  position: relative;
 }
 
 #api_project {
@@ -496,7 +505,7 @@ a:hover {
 }
 
 #google_clone {
-  background-image: url("project_images/google_clone.png");
+  background-image: url("project_images/Google_Clone_scaled.png");
   background-size: 100% 100%;
   border-right: 2px solid black;
 }

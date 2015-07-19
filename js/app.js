@@ -5,7 +5,7 @@ $(document).ready(function() {
 		arrows: true,
 		slidesToShow: 3,
 		slidesToScroll: 3,
-		// infinite: true,
+		infinite: true,
 		responsive: [
 			{
 				breakpoint: 768,
@@ -19,7 +19,8 @@ $(document).ready(function() {
 				breakpoint: 480,
 				settings: {
 					slidesToShow: 1,
-					slidesToScroll: 1
+					slidesToScroll: 1,
+					infinite: true
 				}
 			}
 		]
