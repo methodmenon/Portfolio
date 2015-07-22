@@ -381,11 +381,16 @@ a:hover {
 
 /*Projects Display*/
 .project_image {
-  height: 200px;
   display: block;
-  cursor: pointer;
   position: relative;
+  height: 200px;
+  /*width: 400px;*/
+  cursor: pointer;
   margin-right: .25%;
+}
+
+.project_image img {
+  width: 100%;
 }
 
 .project_link {
@@ -400,12 +405,14 @@ a:hover {
 
 .image_text_overlay {
   display: block;
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
-  height: 200px;
+  height: 100%;
+  width: 100%;
   overflow: auto;
+  z-index: 10;
 }
 
 .project_title {
@@ -414,15 +421,8 @@ a:hover {
   padding-bottom: 10px;
 }
 
-.carousel {
-  display: block;
-  position: relative;
-}
-
 #api_project {
   border-left: 2px solid black;
-  background-image: url("project_images/api_project_1.png");
-  background-size: 100% 100%;
 }
 
 #api_project:hover .image_text_overlay {
@@ -433,8 +433,9 @@ a:hover {
 }
 
 #hot_or_cold {
-  background-image: url("project_images/hot_or_cold_2.png");
-  background-size: 100% 100%;
+  /*background-image: url("project_images/hot_or_cold_2.png");
+  background-size: 100% 100%;*/
+  /*border-right: 2px solid black;*/
 }
 
 #hot_or_cold:hover .image_text_overlay {
@@ -444,8 +445,6 @@ a:hover {
 }
 
 #quiz_app {
-  background-image: url("project_images/science_quiz_1.png");
-  background-size: 100% 100%;
   border-right: 2px solid black;
 }
 
@@ -458,8 +457,6 @@ a:hover {
 /*duplicate image code for slick development*/
 #fizzbuzz_refactor {
   border-left: 2px solid black;
-  background-image: url("project_images/FizzBuzz_Refactor_1.png");
-  background-size: 100% 100%;
 }
 
 #fizzbuzz_refactor:hover .image_text_overlay {
@@ -470,8 +467,9 @@ a:hover {
 }
 
 #jquery_sf {
-  background-image: url("project_images/sf_scaled.png");
-  background-size: 100% 100%;
+  /*background-image: url("project_images/sf_scaled.png");
+  background-size: 100% 100%;*/
+  border: 2px solid white;
 }
 
 #jquery_sf:hover .image_text_overlay {
@@ -481,8 +479,6 @@ a:hover {
 }
 
 #stacker_ajax {
-  background-image: url("project_images/stacker_ajax_scaled.png");
-  background-size: 100% 100%;
   border-right: 2px solid black;
 }
 
@@ -493,9 +489,7 @@ a:hover {
 }
 
 #shopping_list {
-  background-image: url("project_images/Shopping_List_scaled.png");
-  background-size: 100% 100%;
-  border-right: 2px solid black;
+  border: 2px solid white;
 }
 
 #shopping_list:hover .image_text_overlay {
@@ -505,8 +499,6 @@ a:hover {
 }
 
 #google_clone {
-  background-image: url("project_images/Google_Clone_scaled.png");
-  background-size: 100% 100%;
   border-right: 2px solid black;
 }
 
